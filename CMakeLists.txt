@@ -310,41 +310,51 @@ IF(UNIX AND NOT APPLE)
     @ONLY
     )
 
-  # Install all plugin XML files under etc
   install(
-    DIRECTORY plugins
-    DESTINATION etc/${PROJECT_NAME}
-    FILES_MATCHING PATTERN "*.xml"
+    DIRECTORY data/terrain
+    DESTINATION share/${PROJECT_NAME}/data
     )
 
-  # Install all plugin header files under include/PROJECT_NAME
   install(
-    DIRECTORY plugins
-    DESTINATION include/${PROJECT_NAME}
-    FILES_MATCHING PATTERN "*.h"
+    DIRECTORY data/visual-models
+    DESTINATION share/${PROJECT_NAME}/data
     )
 
-  # Install all library headers
-  install(
-    DIRECTORY include/${PROJECT_NAME}
-    DESTINATION include
-    PATTERN "*.pyc" EXCLUDE
-    PATTERN "*__pycache__*" EXCLUDE
-    )
-
-  # Install all project proto headers
-  install(
-    DIRECTORY ${PROTO_INCLUDE_DIR}/${PROJECT_NAME}
-    DESTINATION include
-    FILES_MATCHING PATTERN "*.pb.h"
-    )
-
-  # Install all project message proto headers
-  install(
-    DIRECTORY ${MSGS_INCLUDE_DIR}/${PROJECT_NAME}
-    DESTINATION include
-    FILES_MATCHING PATTERN "*.pb.h"
-    )
+  ## Install all plugin XML files under etc
+  #install(
+  #  DIRECTORY plugins
+  #  DESTINATION etc/${PROJECT_NAME}
+  #  FILES_MATCHING PATTERN "*.xml"
+  #  )
+  #
+  ## Install all plugin header files under include/PROJECT_NAME
+  #install(
+  #  DIRECTORY plugins
+  #  DESTINATION include/${PROJECT_NAME}
+  #  FILES_MATCHING PATTERN "*.h"
+  #  )
+  #
+  ## Install all library headers
+  #install(
+  #  DIRECTORY include/${PROJECT_NAME}
+  #  DESTINATION include
+  #  PATTERN "*.pyc" EXCLUDE
+  #  PATTERN "*__pycache__*" EXCLUDE
+  #  )
+  #
+  ## Install all project proto headers
+  #install(
+  #  DIRECTORY ${PROTO_INCLUDE_DIR}/${PROJECT_NAME}
+  #  DESTINATION include
+  #  FILES_MATCHING PATTERN "*.pb.h"
+  #  )
+  #
+  ## Install all project message proto headers
+  #install(
+  #  DIRECTORY ${MSGS_INCLUDE_DIR}/${PROJECT_NAME}
+  #  DESTINATION include
+  #  FILES_MATCHING PATTERN "*.pb.h"
+  #  )
 
   ## Install the export set for use with the install-tree
   ## Each library needs to export to this same export target name
