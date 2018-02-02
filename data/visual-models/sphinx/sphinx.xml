@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://gtri.gatech.edu"?>
+<params>
+  <model>sphinx.obj</model>
+  <visual_rpy>90 0 180</visual_rpy>  
+
+  <!--
+      mesh has wingspan of 2043.8 units
+  -->
+  <visual_scale>0.000978569</visual_scale> <!-- 2 meter wingspan -->
+  
+</params>
