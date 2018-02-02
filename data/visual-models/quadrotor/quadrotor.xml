@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://gtri.gatech.edu"?>
+<params>
+  <model>quadrotor.obj</model>
+  <visual_rpy>90 45 0</visual_rpy> <!-- + frame configuration -->
+  <!--<visual_rpy>90 0 0</visual_rpy>--> <!-- X frame configuration -->
+
+  <!--
+      Mesh has diagonal length of 29.3396 units
+      (center of rotor to center of rotor)
+  -->
+  <visual_scale>0.011418015</visual_scale> <!-- 333 mm diagonal length -->
+  
+</params>
