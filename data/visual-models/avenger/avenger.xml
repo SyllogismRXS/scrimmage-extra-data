@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://gtri.gatech.edu"?>
+<params>
+  <model>avenger.obj</model>
+  <visual_rpy>0 90 90</visual_rpy>  
+
+  <!--
+      mesh has wingspan of 3996.13 units
+  -->
+  <visual_scale>0.000500484</visual_scale> <!-- 2 meter wingspan -->
+  
+</params>
