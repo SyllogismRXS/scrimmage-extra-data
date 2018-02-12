@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://gtri.gatech.edu"?>
+<params>
+  <model>submarine.obj</model>
+  <visual_rpy>-90 0 180</visual_rpy>  
+
+  <!--
+      mesh has a length of about 188.569 units (bow-to-stern)
+  -->
+  <visual_scale>0.009545577</visual_scale> <!-- 1.8 meter length -->
+  
+</params>
